@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TodoItem from "./TodoItem";
+import { useTodoState } from "../TodoContext";
 
 const TodoListBlock = styled.div`
   flex: 1;
@@ -9,6 +10,8 @@ const TodoListBlock = styled.div`
   overflow-y: auto;
 `;
 function TodoList() {
+  const state = useTodoState();
+  console.log(state);
   return (
     <TodoListBlock>
       TodoList
