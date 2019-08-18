@@ -14,7 +14,7 @@ const initialTodos = [
   {
     id: 3,
     text: "mobx 공부해보기",
-    done: false
+    done: true
   },
   {
     id: 4,
